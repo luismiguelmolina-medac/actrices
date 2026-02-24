@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgUsuario"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="Foto de la actriz" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvNombreDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nombre del Usuario"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescripcionDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Esta es una descripción breve sobre el usuario y sus detalles relevantes en la aplicación."
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEdadDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad: 25 años"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"/>
+
+            <TextView
+                android:id="@+id/tvGeneroDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Género: Masculino"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"/>
+
+            <TextView
+                android:id="@+id/tvNacionalidadDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nacionalidad: Mexicana"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"/>
+
+            <TextView
+                android:id="@+id/tvEstaturaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estatura: 1.75 m"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"/>
+
+            <TextView
+                android:id="@+id/tvPremioDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Tiene Premio?: Sí"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingVertical="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="Editar"
+                android:backgroundTint="#2196F3"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="Eliminar"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
